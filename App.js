@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Home from './src/screens/Home/index.js';
+import Search from './src/screens/Search/index.js';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { SafeAreaView } from 'react-native-web';
+import styles from './src/default/style.js';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    //<SafeAreaView>
+      <NavigationContainer >
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen name="Home" component={Home} options={{headerShown:false}} style={styles.page}/>
+          <Stack.Screen name="Search" component={Search} options={{headerShown:false}} style={styles.page}/>
+        </Stack.Navigator>
+      </NavigationContainer>
+   // </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+
