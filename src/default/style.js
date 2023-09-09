@@ -44,6 +44,16 @@ const styles = StyleSheet.create({
   red:{
     backgroundColor: '#FC5C65'
   },
+  defaultInput:{
+    marginHorizontal: 0.05*screenDimensions.width,
+    marginTop: 0.03 * screenDimensions.height,
+    marginBottom: 0.02  * screenDimensions.height,
+    backgroundColor: '#FFF',
+    height: 40,
+    padding: 10,
+    paddingStart: 20,
+    borderRadius: 15,
+  },
   defaultImage:{
    
     marginHorizontal: 0.1*screenDimensions.width,
