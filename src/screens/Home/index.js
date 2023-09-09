@@ -9,8 +9,9 @@ const Home = ({navigation}) => {
       <StatusBar backgroundColor='#FC5C65'/>
 
       <View style={styles.defaultBody}>
-        
-        <Text style={styles.defaultTitle}>Index Cursos</Text>
+        <View style={styles.defaultTitleContainer }>
+          <Text style={styles.defaultTitle}>Index Cursos</Text>
+        </View>
         
         <Carousel name="Cursos em Destaque" />
         <Carousel name="Recomendações" />
