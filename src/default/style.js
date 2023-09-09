@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
   defaultTitleContainer:{
     borderBottomColor: '#B34246',
     borderBottomWidth: 2,
-    marginBottom: 50
   },
   page:{
     flex: 1,
@@ -52,15 +51,20 @@ const styles = StyleSheet.create({
     height: 0.45*screenDimensions.width,
     resizeMode: 'stretch',
     position: "absolute", 
-    flexDirection:"column"
+    flexDirection:"column",
+    borderWidth: 5,
+    borderColor: '#000',
   },
   containerCarousel:{
-    height: 0.65 * screenDimensions.width
+    height: 0.60 * screenDimensions.width
   },
   titleCarousel:{
-    //marginHorizontal: 0.1*screenDimensions.width,
+    marginTop: 10,
+    marginBottom: 5,
+    marginHorizontal: 0.1*screenDimensions.width,
     fontSize: 20,
-    color: '#FFF',
+    color: '#fff',
+    fontWeight: "bold",
   }
 });
 
