@@ -38,7 +38,7 @@ const Footer = () => {
           </View>
         </TouchableHighlight>
 
-        <TouchableHighlight style={route.name == 'Profile' ? footerStyles.selectedIcon : footerStyles.defaultIcon} onPress={() => navigation.navigate('Search')}>
+        <TouchableHighlight style={route.name == 'Profile' ? footerStyles.selectedIcon : footerStyles.defaultIcon} onPress={() => navigation.navigate('Profile')}>
           <View>
             <Image source={person} alt="Perfil"/>
             

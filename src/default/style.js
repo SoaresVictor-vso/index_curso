@@ -2,7 +2,8 @@ import { StyleSheet, Dimensions } from "react-native";
 
 const screenDimensions = Dimensions.get('screen');
 
-console.log(screenDimensions)
+const h = screenDimensions.height;
+const w = screenDimensions.width;
 
 const styles = StyleSheet.create({
   safeAreaView: {
@@ -75,7 +76,60 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#fff',
     fontWeight: "bold",
-  }
+  },
+  inlineCenter:{
+    alignItems: 'center',
+    alignSelf: 'center',
+    flexDirection:'row',
+  },
+  redOutlineButton:{
+    margin: 10,
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    borderWidth: 3,
+    borderColor: '#c00',
+    height: 0.05 * h,
+    justifyContent: 'center',
+    alignContent: 'center',
+    borderRadius: 10,
+  },
+  redText:{
+    color: '#c00',
+    paddingHorizontal: 5
+  },
+  whiteText:{
+    color: '#fff',
+    paddingHorizontal: 5,
+    alignSelf:  'center'
+  },
+  labelSmall:{
+    marginStart: 0.05 * w,
+    paddingHorizontal: 1,
+    fontSize: 15,
+    color: '#FFF',
+    paddingBottom: 5
+  },
+  redButton:{
+    margin: 10,
+    backgroundColor: '#c00',
+    height: 0.05 * h,
+    width: 0.4 * w,
+    justifyContent: 'center',
+    alignContent: 'center',
+    borderRadius: 10,
+    borderColor: '#FFF',
+    borderWidth: 3
+  },
+  blueButton:{
+    margin: 10,
+    backgroundColor: '#2d98da',
+    height: 0.05 * h,
+    width: 0.4 * w,
+    justifyContent: 'center',
+    alignContent: 'center',
+    borderRadius: 10,
+    borderColor: '#FFF',
+    borderWidth: 3
+  },
 });
 
 
