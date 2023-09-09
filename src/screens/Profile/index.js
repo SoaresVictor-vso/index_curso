@@ -38,8 +38,8 @@ const Home = ({navigation}) => {
             </View>
           </View>
 
-          <View style={profileStyles.box}>
-            <Text style={styles.labelSmall}>Senha</Text>
+          <View style={styles.box}>
+            <Text style={styles.labelSmall}>Remoção de conta</Text>
             <View style={styles.inlineCenter}>
               <Pressable style={styles.redButton}>
                 <Text style={styles.whiteText}>Desativar conta</Text>

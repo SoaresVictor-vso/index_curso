@@ -130,6 +130,11 @@ const styles = StyleSheet.create({
     borderColor: '#FFF',
     borderWidth: 3
   },
+  box:{
+    borderTopWidth: 2,
+    borderTopColor: '#fff',
+    paddingTop: 10
+  }
 });
 
 

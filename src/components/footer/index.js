@@ -45,7 +45,7 @@ const Footer = () => {
           </View>
         </TouchableHighlight>
 
-        <TouchableHighlight style={route.name == 'Settings' ? footerStyles.selectedIcon : footerStyles.defaultIcon} onPress={() => navigation.navigate('Search')}>
+        <TouchableHighlight style={route.name == 'Settings' ? footerStyles.selectedIcon : footerStyles.defaultIcon} onPress={() => navigation.navigate('Settings')}>
           <View>
             <Image source={gear} alt="Configurações"/>
             

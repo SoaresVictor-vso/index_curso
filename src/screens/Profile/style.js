@@ -15,11 +15,6 @@ const styles = StyleSheet.create({
     marginBottom: 0.02 * h,
     borderColor: '#c00',
     borderWidth: 3
-  },
-  box:{
-    borderTopWidth: 2,
-    borderTopColor: '#fff',
-    paddingTop: 10
   }
 
 
