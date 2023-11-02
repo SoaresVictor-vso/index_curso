@@ -24,10 +24,10 @@ const Home = ({navigation}) => {
             </Pressable>
           </View>
         
-          <EditableField val='U Saas' name='Nome exibido'></EditableField>
-          <EditableField val='@gaciaSaas' name='Nome de usuário'></EditableField>
-          <EditableField val='garcaviosia@gmail.com' name='Email de recuperação'></EditableField>
-          <EditableField val='+55 (62) 9 8336-6471' name='Telefone (opcional)'></EditableField>
+          <EditableField id='publicName' name='Nome exibido'></EditableField>
+          <EditableField id='userName' name='Nome de usuário'></EditableField>
+          <EditableField id='email' name='Email de recuperação'></EditableField>
+          <EditableField id='phone' name='Telefone (opcional)'></EditableField>
 
           <View style={profileStyles.box}>
             <Text style={styles.labelSmall}>Senha</Text>
